@@ -12,6 +12,6 @@ public class Main
 {
     public static void main(String[] args) {
         List<Duck> ducks = Arrays.asList(new MallardDuck(), new DecoyDuck(), new RedHeadDuck(), new RubberDuck());
-        ducks.forEach(duck->duck.display());
+        ducks.forEach(duck->duck.fullDisplay());
     }
 }

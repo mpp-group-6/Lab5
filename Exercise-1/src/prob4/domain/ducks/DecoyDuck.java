@@ -9,5 +9,10 @@ public class DecoyDuck extends Duck
     {
         super(new CannotFly(), new MuteQuack());
     }
+    
+    @Override
+    public void display() {
+        System.out.println("Displaying DecoyDuck");
+    }
 
 }

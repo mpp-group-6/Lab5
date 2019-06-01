@@ -9,5 +9,9 @@ public class RedHeadDuck extends Duck
     {
         super(new FlyWithWings(), new Quack());
     }
-
+    
+    @Override
+    public void display() {
+        System.out.println("Displaying RedHeadDuck");
+    }
 }

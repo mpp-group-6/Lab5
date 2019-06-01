@@ -17,17 +17,19 @@ public abstract class Duck
         System.out.println("I am swimming!");
     }
     
-    public void display() {
+    public void fullDisplay() {
         String className = this.getClass().getSimpleName();
         System.out.println("**************************");
         System.out.println(String.format("%s:", className));
-        System.out.println("Display");
+        display();
         fb.fly();
         qb.quack();
         swim();
         System.out.println();
         System.out.println();
     }
+    
+    public abstract void display();
     
 
 }

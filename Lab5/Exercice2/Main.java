@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Exercice2;
+package Lab5.Exercice2;
 
 import java.util.*;
 import java.util.List;

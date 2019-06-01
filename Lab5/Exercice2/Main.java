@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Lab5.Exercice2;
+package Exercice2;
 
 import java.util.*;
 import java.util.List;
@@ -19,9 +19,16 @@ public class Main {
 		// TODO Auto-generated method stub
 		List<Figure> figures = new ArrayList<Figure>();
 		figures.add(new Circle(4.00));
-		figures.add(new Rectangle(2.00, 3.00));
+		figures.add(new Rectangle(2.00, 5.00));
 		figures.add(new Triangle(4.00,3.00));
-		Double sumArea = figures.stream().mapToDouble(figure -> figure.computeArea()).sum();
+		
+		figures.stream().
+		forEach(
+				figure -> 
+					System.out.println("Area of "+ figure.getClass()+"  area : "+String.format("%.2f",figure.computeArea())+"\n" ));
+		
+		Double sumArea = figures.stream().
+				mapToDouble(figure -> figure.computeArea()).sum();
 		
 		System.out.println("Sum of figures' area : "+String.format("%.2f", sumArea));
 	}
